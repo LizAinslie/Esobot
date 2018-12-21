@@ -12,7 +12,7 @@ exports.run = (bot, msg, args) => {
 };
 
 exports.help = {
-    name: 'brainfuck',
+    name: 'unfuck',
     usage: '<code>[ | <input>]',
-    aliases: ['bf', 'brainfk']
+    aliases: ['uf', 'unfk']
 };
