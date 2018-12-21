@@ -1,0 +1,19 @@
+{
+  "name": "esobot",
+  "version": "0.1.0",
+  "description": "Esoteric languages interpreted in discord...",
+  "main": "src/index.js",
+  "repository": "git@github.com:RailRunner166/Esobot.git",
+  "author": "Landon Gravat <railinator4903@gmail.com>",
+  "license": "MIT",
+  "private": false,
+  "scripts": {
+    "start": "node src/index.js"
+  },
+  "dependencies": {
+    "befunge93": "^1.0.5",
+    "discord-paginationembed": "gazmull/discord-paginationembed",
+    "discord.js": "^11.4.2",
+    "fish-interpreter": "^0.3.2"
+  }
+}
