@@ -6,7 +6,7 @@ exports.run = (bot, msg, args) => {
     let befunge = new Befunge();
     befunge.run(input).then(output => {
         msg.channel.send({
-            embed: formatOutput('Befunge93', input, output)
+            embed: formatOutput('Befunge93', input, null, output)
         });
     });
 };

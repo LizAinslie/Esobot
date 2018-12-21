@@ -7,7 +7,7 @@ exports.run = (bot, msg, args) => {
      
     executor.onUpdate((e) => {
         if (e.hasTerminated) msg.channel.send({
-            embed: formatOutput('Fish', source, e.output)
+            embed: formatOutput('Fish', source, null, e.output)
         });
     });
     

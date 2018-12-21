@@ -1,18 +1,18 @@
-var brainfuck  = require('brainfuck');
+const Brainfuck = require('../interpreters/brainfuck');
 const { formatOutput, stripNewlines } = require('../utils');
 
 exports.run = (bot, msg, args) => {
-    const input = stripNewlines(args.join(' '));
-    brainfuck.exec(input, function(err, output) {
-        if (err) throw err;
-        msg.channel.send({
-            embed: formatOutput('Brainfuck', input, output, 0x2F2530)
-        });
+    args = args.join(' ').split('|');
+    const source = stripNewlines(args[0].trim());
+    const input = args[1] ? args[1] : '';
+    const output = new Brainfuck(source, input).exec();
+    msg.channel.send({
+        embed: formatOutput('Brainfuck', source, input, output, 0x2F2530)
     });
 };
 
 exports.help = {
     name: 'brainfuck',
-    usage: '<code>',
+    usage: '<code>[ | <input>]',
     aliases: ['bf', 'brainfk']
 };

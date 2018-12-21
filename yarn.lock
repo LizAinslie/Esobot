@@ -2,6 +2,11 @@
 # yarn lockfile v1
 
 
+"@railrunner16/raildash@^1.0.2-patch.0":
+  version "1.0.2-patch.0"
+  resolved "https://registry.yarnpkg.com/@railrunner16/raildash/-/raildash-1.0.2-patch.0.tgz#bfc242b7ac43953331c04101e34bf4fed4d4aab9"
+  integrity sha512-L41ggJbW9N3M1+di0O30X/Ekj67+7Kf807xA/Zb3YNt//fXGeCf0zthq6reH0UPJYUP30jSMnSiXW5R5/Y1gaA==
+
 async-limiter@~1.0.0:
   version "1.0.0"
   resolved "https://registry.yarnpkg.com/async-limiter/-/async-limiter-1.0.0.tgz#78faed8c3d074ab81f22b4e985d79e8738f720f8"

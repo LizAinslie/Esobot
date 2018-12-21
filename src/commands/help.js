@@ -10,7 +10,7 @@ exports.run = (bot, msg, args) => {
         .addField('Fish', `
         **Usage:** \`${bot._config.prefix} fish <code>\``)
         .addField('Brainfuck', `
-        **Usage:** \`${bot._config.prefix} brainfuck <code>\``)
+        **Usage:** \`${bot._config.prefix} brainfuck <code>[ | <input>]\``)
         .addField('Help', `
         **Usage:** \`${bot._config.prefix} help\``);
     // embeds.push(page1);

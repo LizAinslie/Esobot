@@ -1,11 +1,11 @@
-exports.formatOutput = (name, input, output, color = null) => {
-    return {
+exports.formatOutput = (name, source, input, output, color = null) => {
+    let embed = {
         title: name,
         color: color,
         fields: [
             {
-                name: ':inbox_tray: | Input',
-                value: `\`\`\`${input}\`\`\``
+                name: ':inbox_tray: | Code',
+                value: `\`\`\`${source}\`\`\``
             },
             {
                 name: ':outbox_tray: | Output',
@@ -13,8 +13,24 @@ exports.formatOutput = (name, input, output, color = null) => {
             }
         ]
     };
+    
+    if (input.length > 0) {
+        embed.fields[2] = embed.fields[1];
+        embed.fields[1] = {
+            name: ':notepad_spiral: | Input',
+            value: `\`\`\`${input}\`\`\``
+        };
+    }
+    
+    return embed;
 };
 
 exports.stripNewlines = str => {
     return str.replace(/\r?\n|\r/g, ' ');
+};
+
+exports.chr = code => {
+    let b = new Buffer(1);
+    b[0] = code;
+    return b.toString();
 };
