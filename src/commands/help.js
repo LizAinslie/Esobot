@@ -11,6 +11,7 @@ __[On Esolang](https://esolangs.org/wiki/Befunge)__`)
         .addField('Fish', `**Usage:** \`${bot._config.prefix} fish <code>\`
 __[On Esolang](https://esolangs.org/wiki/Fish)__`)
         .addField('Brainfuck', `**Usage:** \`${bot._config.prefix} brainfuck <code>[ | <input>]\`
+**I'm working on my own interpreter, so this is in progress**
 __[On Esolang](https://esolangs.org/wiki/Brainfuck)__`)
         .addField('Unfuck', `**Usage:** \`${bot._config.prefix} unfuck <code>[ | <input>]\`
 __[On Esolang](https://esolangs.org/wiki/Unfuck)__`)
