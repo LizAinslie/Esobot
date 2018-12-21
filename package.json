@@ -12,6 +12,7 @@
   },
   "dependencies": {
     "befunge93": "^1.0.5",
+    "brainfuck": "^1.0.2",
     "discord-paginationembed": "gazmull/discord-paginationembed",
     "discord.js": "^11.4.2",
     "fish-interpreter": "^0.3.2"
