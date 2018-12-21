@@ -5,10 +5,15 @@ const { RichEmbed } = require('discord.js');
 
 exports.run = (bot, msg, args) => {
     const page1 = new RichEmbed()
-        .addField('Befunge', `**Usage:** \`${bot._config.prefix} befunge <code>\``)
-        .addField('Fish', `**Usage:** \`${bot._config.prefix} fish <code>\``)
-        .addField('Brainfuck', `**Usage:** \`${bot._config.prefix} brainfuck <code>[ | <input>]\``)
-        .addField('Unfuck', `**Usage:** \`${bot._config.prefix} unfuck <code>[ | <input>]\``)
+        .addField('Befunge', `**Usage:** \`${bot._config.prefix} befunge <code>\`
+**TIP:** Only use the befunge93 dialect 
+__[On Esolang](https://esolangs.org/wiki/Befunge)__`)
+        .addField('Fish', `**Usage:** \`${bot._config.prefix} fish <code>\`
+__[On Esolang](https://esolangs.org/wiki/Fish)__`)
+        .addField('Brainfuck', `**Usage:** \`${bot._config.prefix} brainfuck <code>[ | <input>]\`
+__[On Esolang](https://esolangs.org/wiki/Brainfuck)__`)
+        .addField('Unfuck', `**Usage:** \`${bot._config.prefix} unfuck <code>[ | <input>]\`
+__[On Esolang](https://esolangs.org/wiki/Unfuck)__`)
         .addField('Help', `**Usage:** \`${bot._config.prefix} help\``);
     // embeds.push(page1);
     // paginator(msg, 'help', embeds);
