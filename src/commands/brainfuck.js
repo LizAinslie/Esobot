@@ -10,3 +10,9 @@ exports.run = (bot, msg, args) => {
         });
     });
 };
+
+exports.help = {
+    name: 'brainfuck',
+    usage: '<code>',
+    aliases: ['bf', 'brainfk']
+};
