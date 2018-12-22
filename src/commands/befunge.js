@@ -9,6 +9,10 @@ exports.run = (bot, msg, args) => {
             msg.channel.send({
                 embed: formatOutput('Befunge93', input, null, output)
             });
+        }).catch(e => {
+            msg.channel.send({
+                embed: formatErrorOutput(input, '', e)
+            });
         });
     } catch (e) {
         msg.channel.send({
