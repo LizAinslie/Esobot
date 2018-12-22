@@ -23,8 +23,9 @@ class Bot {
         this._client.on('message', msg => {
             if (msg.author.bot) return;
             
-            // const prefix: any = this.loadPrefixes(msg.content);
+            // const prefix = this.loadPrefixes(msg.content);
             
+            if (msg.content.indexOf(this._config.prefix) !== 0) return;
             const args = msg.content.slice(this._config.prefix.length).trim().split(/ +/g);
             const command = args.shift().toLowerCase();
             
